@@ -13,31 +13,26 @@ namespace AnimalShelter
             Animal firstCat = new Cat("Catmanz", 4); // Ett nytt Dog-objekt skapas
             Animal anotherCat = new Cat("Mrs.Mjaosson", 5);
 
-            Console.WriteLine("Name: " + firstDog.name + " Id: " + firstDog.id);
-            Console.WriteLine("Name: " + firstCat.name + " Id: "+ firstCat.id);
-            Console.WriteLine("Name: " + anotherCat.name+ " Id: "+anotherCat.id);
-            Console.WriteLine("Name: " + dog.name + " Id: " + dog.id);
-            Console.WriteLine("Name: " + dog2.name + " Id: " + dog2.id);
-
-
-            //Shelter shelter = new Shelter(); // Ett nytt Shelter-objekt skapas
-            //shelter.AddAnimal(firstCat);
+            Shelter shelter = new Shelter(); // Ett nytt Shelter-objekt skapas
             //shelter.AddAnimal(dog); // Shelter har någon form av datastruktur.
             //När vi kallar på funktionen AddAnimal() kommer objektet vi lägger in som argument att sparas i denna.
             //shelter.AddAnimal(dog2);
             //shelter.DeleteAnimal("Dog-1"); // Shelter har två metoder för att
             //radera en Dog, en baserad på namn, och en baserad på id. (DELEN DÄR MAN BASERAR DELETE PÅ NAMN SKA INTE VARA MÄ)
             //shelter.DeleteAnimal(2);
-            //shelter.AddAnimal(dog);
-            //shelter.AddAnimal(dog2);
+            shelter.AddAnimal(dog);
+            shelter.AddAnimal(dog2);
+            shelter.AddAnimal(firstCat);
+            shelter.AddAnimal(anotherCat);
+            shelter.AddAnimal(firstDog);
             //shelter.UpdateAnimal(dog, "New name"); // UpdateAnimal() tar in ett
             //Dog - objekt och en sträng, vilket uppdaterar                 namnet på objektet vi skickade med.
-            //Console.WriteLine(shelter.GetAnimal(1).GetName()); // "New name"
-            //var myshelter = shelter.GetAnimals();
-            //foreach (Animal animal in myshelter)
-            //{
-            //    animal.MakeSound(); // "Voff!"
-            //}
+            //Console.WriteLine(shelter.GetAnimals(1).GetName()); // "New name"
+            var myshelter = shelter.GetAnimals();
+            foreach (Animal animal in myshelter)
+            {
+                animal.MakeSound(); // "Voff!"
+            }
         }
     }
 }

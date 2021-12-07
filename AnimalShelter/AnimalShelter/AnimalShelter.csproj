@@ -36,6 +36,7 @@
     <Compile Include="Repositories\AnimalRepository.cs" />
     <Compile Include="Entities\Dog.cs" />
     <Compile Include="Entities\Cat.cs" />
+    <Compile Include="Entities\Shelter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />

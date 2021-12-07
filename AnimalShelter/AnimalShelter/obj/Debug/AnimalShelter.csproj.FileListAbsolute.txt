@@ -3,3 +3,4 @@
 /Users/sebastianwarvsten/Documents/BackendUtveckling/laboration1/AnimalShelter/AnimalShelter/obj/Debug/AnimalShelter.csproj.CoreCompileInputs.cache
 /Users/sebastianwarvsten/Documents/BackendUtveckling/laboration1/AnimalShelter/AnimalShelter/obj/Debug/AnimalShelter.exe
 /Users/sebastianwarvsten/Documents/BackendUtveckling/laboration1/AnimalShelter/AnimalShelter/obj/Debug/AnimalShelter.pdb
+/Users/sebastianwarvsten/Documents/BackendUtveckling/laboration1/AnimalShelter/AnimalShelter/obj/Debug/AnimalShelter.csproj.AssemblyReference.cache
