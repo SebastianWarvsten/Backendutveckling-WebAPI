@@ -10,5 +10,9 @@ namespace AnimalShelter.Entities
         {
             Console.WriteLine("Makes a sound");
         }
+        public string GetName()
+        {
+            return name;
+        }
     }
 }

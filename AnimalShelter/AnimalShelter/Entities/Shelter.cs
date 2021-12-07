@@ -10,20 +10,23 @@ namespace AnimalShelter.Entities
         }
         private readonly List<Animal> _animals = new List<Animal>()
         {
-            new Animal() { id = 1, name = "Tigerbear"},
-            new Animal() { id = 2, name = "WolfCat"},
-            new Animal() { id = 3, name = "Dobbermannen"},
+            new Animal() { id = 8, name = "Tigerbear"},
         };
         public void AddAnimal(Animal animal)
         {
             _animals.Add(animal);
             Console.WriteLine(animal.name + " added to the shelter");
         }
+        public void DeleteAnimal(int id)
+        {
+            Animal markedAnimal = _animals.Find(e => e.id == id);
+            _animals.Remove(markedAnimal);
+        }
         public IEnumerable<Animal> GetAnimals()
         {
             return _animals;
         }
-        public Animal GetVinyl(int id)
+        public Animal GetAnimals(int id)
         {
             var animal = _animals.Where(item => item.id == id);
             return animal.SingleOrDefault();
