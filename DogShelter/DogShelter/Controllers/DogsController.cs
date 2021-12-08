@@ -18,5 +18,17 @@ namespace DogShelter.Controllers
         {
             return _dogRepository.GetDogs();
         }
+        [HttpGet("{id}")]
+
+        public ActionResult<Dog> GetDog(int id)
+        {
+            var dog = _dogRepository.GetDog(id);
+
+            if(dog == null)
+            {
+                return NotFound();
+            }
+            return Ok(dog);
+        }
     }
 }

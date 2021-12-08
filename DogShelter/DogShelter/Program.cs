@@ -27,7 +27,6 @@ namespace DogShelter
 
 
 //url = https//localhost:5001
-//GET url/api/dogs -> få tillbaka en lista på samtliga dogs
 //GET url/api/dogs/{id} -> få tillbaka en en unik dog baserad på id
 //PUT url/api/dogs/{id} -> updatera namnet på en dog
 //DELETE url/api/dogs/{id} -> radera en dog baserat på id

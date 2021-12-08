@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using DogShelter.Entities;
 
 namespace DogShelter.Repositories
@@ -16,6 +17,12 @@ namespace DogShelter.Repositories
         public IEnumerable<Dog> GetDogs()
         {
             return _dogsCollection;
+        }
+
+        public Dog GetDog(int id)
+        {
+            var dog = _dogsCollection.Where(e => e.id == id);
+            return dog.SingleOrDefault();
         }
     }
 }
