@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{3C1F6184-C43C-4FD3-B72E-F8A91D2FCA7C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DogShelter/Program.cs">
+    <Files>
+      <File FileName="DogShelter/Properties/launchSettings.json" Line="23" Column="29" />
+      <File FileName="DogShelter/Controllers/WeatherForecastController.cs" Line="28" Column="10" />
+      <File FileName="DogShelter/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DogShelter" expanded="True">
+            <Node name="DogShelter" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.DogShelter PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
