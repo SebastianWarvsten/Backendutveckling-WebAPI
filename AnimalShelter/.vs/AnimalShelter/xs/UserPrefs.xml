@@ -1,23 +1,17 @@
 ﻿<Properties StartupConfiguration="{8CA56A65-4ECF-441E-A297-0BBDEC5D1C64}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalShelter/Entities/Shelter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalShelter/Program.cs">
     <Files>
-      <File FileName="AnimalShelter/Program.cs" Line="36" Column="33" />
-      <File FileName="AnimalShelter/Entities/Animal.cs" />
-      <File FileName="AnimalShelter/Entities/Dog.cs" />
-      <File FileName="AnimalShelter/Entities/Cat.cs" />
-      <File FileName="AnimalShelter/Repositories/AnimalRepository.cs" />
-      <File FileName="AnimalShelter/Entities/Shelter.cs" Line="17" Column="1" />
+      <File FileName="AnimalShelter/Program.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AnimalShelter" expanded="True">
             <Node name="AnimalShelter" expanded="True">
-              <Node name="Entities" expanded="True">
-                <Node name="Shelter.cs" selected="True" />
-              </Node>
+              <Node name="Entities" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

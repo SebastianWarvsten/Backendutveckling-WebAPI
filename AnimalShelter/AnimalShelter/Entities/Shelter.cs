@@ -10,7 +10,6 @@ namespace AnimalShelter.Entities
         }
         private readonly List<Animal> _animals = new List<Animal>()
         {
-            new Animal() { id = 8, name = "Tigerbear"},
         };
         public void AddAnimal(Animal animal)
         {
@@ -30,6 +29,11 @@ namespace AnimalShelter.Entities
         {
             var animal = _animals.Where(item => item.id == id);
             return animal.SingleOrDefault();
+        }
+        public void UpdateAnimal(Animal animal, string newName)
+        {
+            var updatedAnimal = _animals.Find(e => e.name == animal.name);
+            animal.name = newName;
         }
     }
 }
