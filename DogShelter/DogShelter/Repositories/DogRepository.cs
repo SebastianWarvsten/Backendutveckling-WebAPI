@@ -24,5 +24,21 @@ namespace DogShelter.Repositories
             var dog = _dogsCollection.Where(e => e.id == id);
             return dog.SingleOrDefault();
         }
+
+        public void UpdateDog(Dog dog)
+        {
+            var index = _dogsCollection.FindIndex(e => e.id == dog.id);
+            _dogsCollection[index] = dog;
+
+        }
+        public void DeleteDog(int id)
+        {
+            Dog index = _dogsCollection.Find(e => e.id == id);
+            _dogsCollection.Remove(index);
+        }
+        public void AddDog(Dog dog)
+        {
+            _dogsCollection.Add(dog);
+        }
     }
 }
