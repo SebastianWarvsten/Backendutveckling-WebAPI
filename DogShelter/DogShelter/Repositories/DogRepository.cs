@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using DogShelter.Entities;
 
 namespace DogShelter.Repositories
 {
-    public class DogRepository
+    public class DogRepository : IDogRepository
     {
         private readonly List<Dog> _dogsCollection = new List<Dog>()
         {

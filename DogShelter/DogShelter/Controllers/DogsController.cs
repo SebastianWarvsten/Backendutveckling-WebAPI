@@ -3,7 +3,6 @@ using DogShelter.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace DogShelter.Controllers
 {
@@ -11,14 +10,21 @@ namespace DogShelter.Controllers
     [ApiController]
     public class DogsController : ControllerBase
     {
-        private readonly DogRepository _dogRepository = new DogRepository();
+        private readonly IDogRepository _dogRepository;
+
+        public DogsController(IDogRepository repo)
+        {
+            _dogRepository = repo;
+        }
 
         [HttpGet]
 
         public IEnumerable<Dog> GetDogs()
         {
-            return _dogRepository.GetDogs();
+            var dogs = _dogRepository.GetDogs();
+            return dogs;
         }
+
         [HttpGet("{id}")]
 
         public ActionResult<Dog> GetDog(int id)
