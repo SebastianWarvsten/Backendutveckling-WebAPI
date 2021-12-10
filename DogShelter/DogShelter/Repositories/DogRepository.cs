@@ -8,9 +8,9 @@ namespace DogShelter.Repositories
     {
         private readonly List<Dog> _dogsCollection = new List<Dog>()
         {
-            new Dog() { id = 1, name = "Doggy_1" },
-            new Dog() { id = 2, name = "Doggy_2" },
-            new Dog() { id = 3, name = "Doggy_3" },
+            new Dog() { Id = 1, Name = "Doggy_1" },
+            new Dog() { Id = 2, Name = "Doggy_2" },
+            new Dog() { Id = 3, Name = "Doggy_3" },
         };
 
         public IEnumerable<Dog> GetDogs()
@@ -20,19 +20,19 @@ namespace DogShelter.Repositories
 
         public Dog GetDog(int id)
         {
-            var dog = _dogsCollection.Where(e => e.id == id);
+            var dog = _dogsCollection.Where(e => e.Id == id);
             return dog.SingleOrDefault();
         }
 
         public void UpdateDog(Dog dog)
         {
-            var index = _dogsCollection.FindIndex(e => e.id == dog.id);
+            var index = _dogsCollection.FindIndex(e => e.Id == dog.Id);
             _dogsCollection[index] = dog;
 
         }
         public void DeleteDog(int id)
         {
-            Dog index = _dogsCollection.Find(e => e.id == id);
+            Dog index = _dogsCollection.Find(e => e.Id == id);
             _dogsCollection.Remove(index);
         }
         public void AddDog(Dog dog)

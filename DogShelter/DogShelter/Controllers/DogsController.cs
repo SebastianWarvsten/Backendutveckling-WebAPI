@@ -46,7 +46,7 @@ namespace DogShelter.Controllers
             {
                 return NotFound();
             }
-            selectedDog.name = dog.name;
+            selectedDog.Name = dog.Name;
             _dogRepository.UpdateDog(selectedDog);
             return Ok();
         }
@@ -63,11 +63,11 @@ namespace DogShelter.Controllers
         {
             Dog nDog = new Dog()
             {
-                id = dog.id,
-                name = dog.name,
+                Id = dog.Id,
+                Name = dog.Name,
             };
             _dogRepository.AddDog(dog);
-            return CreatedAtAction(nameof(GetDog), new { id = dog.id }, dog);
+            return CreatedAtAction(nameof(GetDog), new { id = dog.Id }, dog);
         }
     }
 }
